@@ -97,6 +97,7 @@
     <ClCompile Include="src\loadCatoon.cpp" />
     <ClCompile Include="src\programing.cpp" />
     <ClCompile Include="src\RFactory.cpp" />
+    <ClCompile Include="src\RParser.cpp" />
     <ClCompile Include="src\RTask.cpp" />
     <ClCompile Include="src\RTaskTestDemo.cpp" />
     <ClCompile Include="src\RTestTask.cpp" />
@@ -118,6 +119,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="inc\RFactory.h" />
+    <ClInclude Include="inc\RParser.h" />
     <ClInclude Include="inc\RTask.h" />
     <ClInclude Include="inc\RTaskTestDemo.h" />
     <ClInclude Include="inc\RTestTask.h" />
@@ -126,6 +128,7 @@
     <ClInclude Include="inc\threads.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="config.ini" />
     <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

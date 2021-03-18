@@ -499,14 +499,7 @@
            </widget>
           </item>
           <item>
-           <layout class="QGridLayout" name="gridLayout_14" rowstretch="0,0,0,0" columnstretch="0,0" rowminimumheight="0,0,0,0">
-            <item row="1" column="0">
-             <widget class="QPushButton" name="wifi_test">
-              <property name="text">
-               <string>Wifi</string>
-              </property>
-             </widget>
-            </item>
+           <layout class="QGridLayout" name="gridLayout_14" rowstretch="0,0,0,0" columnstretch="0,0">
             <item row="2" column="0">
              <widget class="QPushButton" name="wtd_test">
               <property name="text">
@@ -514,17 +507,24 @@
               </property>
              </widget>
             </item>
-            <item row="1" column="1">
-             <widget class="QPushButton" name="eth_test">
-              <property name="text">
-               <string>以太网</string>
-              </property>
-             </widget>
-            </item>
             <item row="2" column="1">
              <widget class="QPushButton" name="usb_test">
               <property name="text">
                <string>USB</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="wifi_test">
+              <property name="text">
+               <string>Wifi</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QPushButton" name="eth_test">
+              <property name="text">
+               <string>以太网</string>
               </property>
              </widget>
             </item>

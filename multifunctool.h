@@ -46,6 +46,10 @@ private:
 
 	Loading* load;
 	boost::shared_ptr<QTimer> closeLoad;
+
+	//not use
+	unsigned int devNum;
+	unsigned int comChoice;
 private:
     Ui::multifunctool ui;
 };

@@ -9,6 +9,7 @@
 #include "threadpool.h"
 #include "RFactory.h"
 #include "RTask.h"
+#include "RParser.h"
 
 
 #define  THREAD_CREATE_NUM  10
@@ -17,11 +18,10 @@
 using namespace boost;
 
 multifunctool::multifunctool(QWidget *parent): QMainWindow(parent),\
-    m_acceptor(m_io, endpoint_type(asio::ip::tcp::v4(), LISTEN_PORT)), \
+    m_acceptor(m_io, endpoint_type(asio::ip::tcp::v4(), RParser::GetInt("NETWORK.listen", LISTEN_PORT))), \
     closeLoad(new QTimer(this))
 {
     ui.setupUi(this);
-	ui.setupUi(this);
 
 	//参数初始化
 	isStoped = false;
@@ -32,7 +32,7 @@ multifunctool::multifunctool(QWidget *parent): QMainWindow(parent),\
 
 	//函数初始化
 	InitDisplayWindows();
-	ThreadPool::Get()->Create(THREAD_CREATE_NUM);				//线程池创建
+	ThreadPool::Get()->Create(RParser::GetInt("NETWORK.thread_num",THREAD_CREATE_NUM));				//线程池创建
 
 
 	//按钮属性初始化

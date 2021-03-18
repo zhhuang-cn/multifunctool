@@ -21,6 +21,9 @@
       <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
       <Extensions>ts</Extensions>
     </Filter>
+    <Filter Include="XMLConfig">
+      <UniqueIdentifier>{847ec8d7-0ef1-4b7a-ae42-4455506dbb89}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="multifunctool.qrc">
@@ -64,6 +67,9 @@
     <ClCompile Include="src\threads.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\RParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="inc\loadCatoon.h">
@@ -95,6 +101,9 @@
     <ClInclude Include="inc\threads.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="inc\RParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="programing.ui">
@@ -107,6 +116,9 @@
   <ItemGroup>
     <None Include="README.md">
       <Filter>Source Files</Filter>
+    </None>
+    <None Include="config.ini">
+      <Filter>XMLConfig</Filter>
     </None>
   </ItemGroup>
 </Project>
