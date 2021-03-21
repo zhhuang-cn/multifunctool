@@ -34,6 +34,8 @@ bool RTestTaskCMD::Init()
 		len = sock->read_some(boost::asio::buffer(buff), ec);
 		if (ec)
 		{
+			if (sock->is_open())
+				sock->close();
 			cout << "RTestTaskCMD::Init()" << endl;
 			break;
 		}
